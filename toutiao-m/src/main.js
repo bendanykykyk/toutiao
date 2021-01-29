@@ -6,6 +6,14 @@ import store from "./store";
 import "style/index.less";
 // 自动设置 REM 基准值 （html 标签字体大小）
 import "amfe-flexible";
+
+// 引用dayjs
+import "utils/day";
+
+// 引用lodash
+import "utils/lodash";
+// 引入 github-markdown-css
+import "github-markdown-css";
 Vue.config.productionTip = false;
 
 // 把 App 根组件渲染/替换到 #app节点

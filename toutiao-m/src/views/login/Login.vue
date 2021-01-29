@@ -72,7 +72,7 @@ export default {
   data() {
     return {
       userForm: {
-        mobile: "18758580113",
+        mobile: "13933333333", // 13922222222
         code: "246810"
       },
       userFormValidate: {
@@ -104,8 +104,9 @@ export default {
 
       login(this.userForm).then(
         res => {
-          console.log(res);
+          // console.log(res);
           this.$toast.success("登录成功");
+          this.$store.commit("setUser", res.data);
           this.$router.push("/");
         },
         err => {
